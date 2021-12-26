@@ -1,0 +1,11 @@
+.idea
+.settings
+.project
+target
+
+*.iml
+*/target
+*/.*
+*/**/*.iml
+
+**/node_modules

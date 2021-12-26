@@ -1,0 +1,13 @@
+server:
+   port: 0
+
+spring:
+   application:
+      name: ddd-order
+
+   datasource:
+      url: jdbc:mysql://47.116.6.177:3306/warehouse_dev
+      username: root
+      password: Xiezhu.123456
+      hikari:
+         connection-timeout: 3000
