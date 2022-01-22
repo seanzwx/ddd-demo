@@ -1,4 +1,4 @@
-package com.ddd.order.vo;
+package com.ddd.order.app.vo;
 
 import java.util.List;
 

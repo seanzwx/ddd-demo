@@ -1,4 +1,4 @@
-package com.ddd.order;
+package com.ddd.order.app;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -16,7 +16,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import java.nio.charset.StandardCharsets;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = Main.class)
+@SpringBootTest(classes = TestApp.class)
 @AutoConfigureMockMvc
 public class BaseTest
 {

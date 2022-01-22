@@ -1,4 +1,4 @@
-package com.ddd.order.application;
+package com.ddd.order.app.service;
 
 import com.ddd.order.domain.dto.AddressDTO;
 import com.ddd.order.domain.dto.CartProductDTO;
