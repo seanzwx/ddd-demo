@@ -15,7 +15,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>order-api</module>
         <module>order-app</module>
         <module>order-domain</module>
         <module>order-repository</module>

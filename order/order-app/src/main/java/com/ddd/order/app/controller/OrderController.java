@@ -81,6 +81,7 @@ public class OrderController
 
 		InfoV1R data = new InfoV1R();
 		data.order = DtoUtil.copyObject(order, OrderVO.class);
+		data.order.address = order.buyer.addressInfo.address;
 		data.order.productList.clear();
 		for (OrderProduct it : order.productList)
 		{

@@ -1,5 +1,6 @@
 package com.ddd.order;
 
+import com.ddd.order.app.util.BeanUtil;
 import com.ddd.order.domain.repository.ApiRepository;
 import com.ddd.order.domain.repository.Factory;
 import com.ddd.order.domain.repository.OrderRepository;

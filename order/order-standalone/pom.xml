@@ -16,11 +16,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.netsky.ddd</groupId>
-			<artifactId>order-app</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.netsky.ddd</groupId>
 			<artifactId>order-repository</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>

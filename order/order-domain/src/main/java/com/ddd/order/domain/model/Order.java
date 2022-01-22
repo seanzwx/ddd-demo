@@ -12,14 +12,12 @@ import java.util.List;
 public class Order
 {
 	public long orderId;
-	public long userId;
+	public String status;
 
-	public String name;
-	public String address;
-	public String phone;
+	public Saler saler;
+	public Buyer buyer;
 
 	public List<OrderProduct> productList;
-	public String status;
 
 	/**
 	 * 创建订单
@@ -42,11 +40,13 @@ public class Order
 
 		// 保存订单
 		Order order = new Order();
-		order.userId = userId;
 		order.status = "待发货";
-		order.name = address.name;
-		order.address = address.address;
-		order.phone = address.phone;
+
+		// 买方信息
+		order.buyer = new Buyer();
+		order.buyer.userId = userId;
+		order.buyer.addressInfo = DtoUtil.copyObject(address, AddressInfo.class);
+
 		order.productList = new LinkedList<>();
 		Factory.getOrderRepository().saveOrder(order);
 
@@ -59,7 +59,7 @@ public class Order
 		}
 
 		// 返回订单
-		return order;
+		return get(order.orderId);
 	}
 
 	/**
