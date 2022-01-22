@@ -13,4 +13,10 @@ public class BusinessException extends Exception
 		this.code = 1000;
 		this.msg = msg;
 	}
+
+	public BusinessException(int code, String msg)
+	{
+		this.code = code;
+		this.msg = msg;
+	}
 }

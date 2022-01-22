@@ -1,8 +1,10 @@
-package com.ddd.order.domain.repository;
+package com.ddd.order.repository;
 
+import com.ddd.order.domain.dto.ProductDTO;
+import com.ddd.order.domain.repository.ApiRepository;
 import com.ddd.product.api.ProductApi;
-import com.ddd.product.dto.ProductDTO;
 import com.ddd.warehouse.api.WarehouseApi;
+import com.netsky.ddd.common.DtoUtil;
 
 public class ApiRepositoryImpl implements ApiRepository
 {
@@ -15,6 +17,6 @@ public class ApiRepositoryImpl implements ApiRepository
 	@Override
 	public ProductDTO getProductInfo(long productId)
 	{
-		return ProductApi.getProduct(productId);
+		return DtoUtil.copyObject(ProductApi.getProduct(productId), ProductDTO.class);
 	}
 }

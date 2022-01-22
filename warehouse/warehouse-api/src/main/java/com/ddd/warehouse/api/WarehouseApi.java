@@ -9,6 +9,7 @@ public class WarehouseApi
 	 */
 	public static int getProductNum(long productId)
 	{
+		// http调用仓库服务
 		return 0;
 	}
 }

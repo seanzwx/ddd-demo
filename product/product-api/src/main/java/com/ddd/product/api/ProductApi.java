@@ -1,7 +1,5 @@
 package com.ddd.product.api;
 
-import com.ddd.product.dto.Product;
-
 public class ProductApi
 {
 	/**
@@ -11,6 +9,7 @@ public class ProductApi
 	 */
 	public static Product getProduct(long productId)
 	{
+		// http调用商品服务
 		return null;
 	}
 }

@@ -2,7 +2,7 @@ package com.ddd.order.domain.model;
 
 import com.ddd.order.domain.dto.AddressDTO;
 import com.ddd.order.domain.dto.CartProductDTO;
-import com.ddd.order.domain.factory.Factory;
+import com.ddd.order.domain.repository.Factory;
 import com.netsky.ddd.common.BusinessException;
 import com.netsky.ddd.common.DtoUtil;
 
@@ -21,6 +21,14 @@ public class Order
 	public List<OrderProduct> productList;
 	public String status;
 
+	/**
+	 * 创建订单
+	 * @param userId
+	 * @param productList
+	 * @param address
+	 * @return
+	 * @throws BusinessException
+	 */
 	public static Order create(long userId, List<CartProductDTO> productList, AddressDTO address) throws BusinessException
 	{
 		// 检查库存
@@ -54,6 +62,11 @@ public class Order
 		return order;
 	}
 
+	/**
+	 * 获取订单
+	 * @param orderId
+	 * @return
+	 */
 	public static Order get(long orderId)
 	{
 		// 读取订单
@@ -63,12 +76,19 @@ public class Order
 		return order;
 	}
 
+	/**
+	 * 供应商发货
+	 */
 	public void send()
 	{
 		this.status = "供应商发货";
 		Factory.getOrderRepository().saveOrder(this);
 	}
 
+	/**
+	 * 用户确认收货
+	 * @param rate
+	 */
 	public void receive(int rate)
 	{
 		this.status = "已收货";

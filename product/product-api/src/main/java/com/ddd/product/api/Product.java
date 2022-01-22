@@ -1,4 +1,4 @@
-package com.ddd.product.dto;
+package com.ddd.product.api;
 
 import lombok.Data;
 

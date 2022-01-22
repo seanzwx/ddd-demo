@@ -6,6 +6,6 @@ import lombok.Data;
 public class AddressDTO
 {
 	public String name;
-	public String address;
 	public String phone;
+	public String address;
 }
