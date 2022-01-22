@@ -1,4 +1,4 @@
-package com.ddd.order.controller;
+package com.ddd.order;
 
 import com.alibaba.fastjson.JSONObject;
 

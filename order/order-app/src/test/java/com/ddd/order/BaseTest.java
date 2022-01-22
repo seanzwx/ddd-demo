@@ -1,11 +1,8 @@
-package com.ddd.order.controller;
+package com.ddd.order;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.ddd.order.Main;
-import com.ddd.order.domain.factory.Factory;
 
-import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -25,12 +22,6 @@ public class BaseTest
 {
 	@Autowired
 	protected MockMvc mvc;
-
-	@Before
-	public void before()
-	{
-		Factory.TestMode = true;
-	}
 
 	protected void test(String url, JSONObject param) throws Exception
 	{

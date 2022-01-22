@@ -13,9 +13,12 @@
     <artifactId>order</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    
+
     <modules>
-    	<module>order-api</module>
+        <module>order-api</module>
         <module>order-app</module>
+        <module>order-domain</module>
+        <module>order-repository</module>
+        <module>order-standalone</module>
     </modules>
 </project>

@@ -16,6 +16,5 @@
 
 	<modules>
 		<module>product-api</module>
-		<module>product-app</module>
 	</modules>
 </project>

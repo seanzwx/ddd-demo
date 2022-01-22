@@ -15,18 +15,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.netsky.ddd</groupId>
-            <artifactId>order-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.netsky.ddd</groupId>
-            <artifactId>product-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.netsky.ddd</groupId>
-            <artifactId>warehouse-api</artifactId>
+            <artifactId>order-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -42,15 +41,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>user</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

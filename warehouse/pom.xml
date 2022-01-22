@@ -16,6 +16,5 @@
     
     <modules>
     	<module>warehouse-api</module>
-        <module>warehouse-app</module>
     </modules>
 </project>

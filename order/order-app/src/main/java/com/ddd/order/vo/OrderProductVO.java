@@ -1,4 +1,4 @@
-package com.ddd.order.controller.vo;
+package com.ddd.order.vo;
 
 import lombok.Data;
 
