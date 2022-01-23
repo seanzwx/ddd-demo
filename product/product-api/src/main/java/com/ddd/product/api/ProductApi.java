@@ -9,7 +9,7 @@ public class ProductApi
 	 */
 	public static Product getProduct(long productId)
 	{
-		// http调用商品服务
+		// TODO http调用商品服务
 		return null;
 	}
 }

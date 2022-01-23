@@ -20,6 +20,7 @@ public class Main
 {
 	public static void main(String[] args) throws Exception
 	{
+		// 预加载
 		prepare();
 
 		// 启动spring

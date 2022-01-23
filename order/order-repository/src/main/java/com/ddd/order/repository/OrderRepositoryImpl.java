@@ -25,6 +25,7 @@ public class OrderRepositoryImpl implements OrderRepository
 		JdbcTemplate jdbcTemplate = jdbcTemplateSupplier.get();
 		System.out.println("jdbctemplate: " + jdbcTemplate);
 
+		// TODO 从mysql获取订单信息
 		return new Order();
 	}
 
