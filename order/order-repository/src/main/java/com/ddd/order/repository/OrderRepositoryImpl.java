@@ -30,14 +30,18 @@ public class OrderRepositoryImpl implements OrderRepository
 	}
 
 	@Override
-	public List<OrderProduct> getOrderProduct(long orderId)
+	public void saveOrder(Order order)
 	{
-		return new LinkedList<>();
+		JdbcTemplate jdbcTemplate = jdbcTemplateSupplier.get();
+		System.out.println("jdbctemplate: " + jdbcTemplate);
+
+		// TODO 拆分order对象保存到mysql
 	}
 
 	@Override
-	public void saveOrder(Order order)
+	public List<OrderProduct> getOrderProduct(long orderId)
 	{
+		return new LinkedList<>();
 	}
 
 	@Override
