@@ -8,8 +8,8 @@ spring:
       name: order-standalone
 
    datasource:
-      url: jdbc:mysql://47.116.6.177:3306/warehouse_dev
+      url: jdbc:mysql://localhost:3306/demo
       username: root
-      password: Xiezhu.123456
+      password: 123456
       hikari:
          connection-timeout: 3000
